@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>if</title>
+</head>
+<body>
+	<h1>Пароль: KALGANOVA</h1>
+<script language="JavaScript" type="text/JavaScript">
+function compair()
+{
+var x, y;
+x=parseInt(prompt("Введите значение х",''));
+y=parseInt(prompt("Введите значение у",'')); 
+if(x<y)
+{
+alert(" Максимальное число - y");
+}
+else if(x>y)
+{
+alert(" Максимальное число - x");
+}
+else
+{
+alert(" Числа равны!");
+}
+}
+function pass()
+{
+var password = "KALGANOVA";
+if(password == prompt("Введите пароль: "))
+{
+	alert("Пароль введен верно!");
+}
+else
+{
+	alert("Пароль введен НЕ верно!");
+	pass();
+}
+}
+
+compair();
+setTimeout(pass,1000);
+
+</script>
+<div>
+     	<a  href="Lab3.html"><button>Задание №3</button></a>
+     	<a href="Lab5.html"><button>Задание №5</button></a>
+     </div>
+</body>
+</html>
